@@ -2,4 +2,5 @@ data_source dataprodukt:
   type: bigquery
   connection:
     use_context_auth: True
+  project_id: teamdagpenger-dev-885f
   dataset: dataprodukt
