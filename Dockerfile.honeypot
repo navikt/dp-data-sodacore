@@ -6,4 +6,4 @@ RUN wget https://github.com/znsio/specmatic/releases/download/0.59.0/specmatic.j
 
 COPY spec.yaml .
 
-CMD ["java", "-jar", "/specmatic.jar", "stub", "spec.yaml"]
+CMD ["java", "-jar", "/specmatic.jar", "stub", "spec.yaml", "--jsonConsoleLog"]
