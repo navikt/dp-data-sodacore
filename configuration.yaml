@@ -4,3 +4,8 @@ data_source dataprodukt:
     use_context_auth: True
   project_id: teamdagpenger-dev-885f
   dataset: dataprodukt
+
+soda_cloud:
+  host: dp-data-sodacore-honeypot
+  api_key_id: 1
+  api_key_secret: 2
