@@ -1,7 +1,6 @@
 FROM eclipse-temurin:17-jre
 
-ADD https://github.com/znsio/specmatic/releases/download/0.59.0/specmatic.jar \
-        /specmatic.jar
+ADD specmatic.jar /specmatic.jar
 
 COPY spec.yaml .
 
