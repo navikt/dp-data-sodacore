@@ -1,0 +1,2 @@
+checks for data_soknad_faktum_v1:
+  - row_count > 0

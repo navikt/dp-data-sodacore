@@ -1,0 +1,16 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Application"
+metadata:
+  name: dp-data-sodacore
+  namespace: teamdagpenger
+  labels:
+    team: teamdagpenger
+spec:
+  image: {{image}}
+  gcp:
+    permissions:
+      - resource:
+          apiVersion: bigquery.cnrm.cloud.google.com/v1beta1
+          kind: BigQueryDataset
+          name: dataprodukt
+        role: roles/bigquery.dataViewer

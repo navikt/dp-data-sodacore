@@ -1,0 +1,4 @@
+data_source dataprodukt:
+  type: bigquery
+  connection:
+    use_context_auth: True
