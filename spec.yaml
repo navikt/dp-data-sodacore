@@ -40,3 +40,43 @@ paths:
                 200_OKAY:
                   value: '{any}'
 
+  /api/command:
+    post:
+      summary: New scenario
+      parameters:
+      - name: host
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: content-type
+        in: header
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Command_RequestBody'
+      responses:
+        "200":
+          description: New scenario
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  schemas:
+    Command_RequestBody:
+      required:
+      - apiKeyId
+      - apiKeySecret
+      - type
+      properties:
+        type:
+          type: string
+        apiKeyId:
+          type: number
+        apiKeySecret:
+          type: number
