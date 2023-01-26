@@ -6,6 +6,6 @@ data_source dataprodukt:
   dataset: dataprodukt
 
 soda_cloud:
-  host: dp-data-sodacore-honeypot
+  host: sodacore-honeypot.dev.intern.nav.no
   api_key_id: 1
   api_key_secret: 2

@@ -11,3 +11,5 @@ spec:
   replicas:
     max: 1
     min: 1
+  ingresses:
+    - https://sodacore-honeypot.dev.intern.nav.no
